@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inscription</title>
+  <style> 
+  
+  .a {display: flex;
+  margin-bottom: auto;
+  margin-bottom:3px ; }
+  .aa input { margin-left:  57px; margin-bottom:3px ;}
+  .ab input{  margin-left:  39.5px;
+    margin-bottom:3px ;   }
+  .ac input { margin-left:  51px;
+    margin-bottom:3px ; }
+  .ad input {margin-left:  22px;
+    margin-bottom:3px ; }
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="accueil.html">Accueil</a>
+          <a href="tournois.html">Tournois et matches</a> 
+          <a href="joueurs.html">Liste des joueurs</a>
+          <a href="inscription.html">Inscription</a>
+        </nav>
+      
+        <hr style="border: 0; height: 1px; background: #333;">
+        
+        <img src="image0.jpg" alt="Logo de la fédération" width="100%" height="300px">
+
+
+<form>
+    <h1>inscription du match</h1>
+  <div class="aa">
+  <label for="nom">Nom :</label>
+  <input type="text" id="nom" name="nom" required pattern="[A-Z a-z]{2,}" title="Veuillez entrer un nom valide (lettres uniquement)">
+</div>
+<div class="ab">
+  <label for="prenom">Prénom :</label>
+  <input type="text" id="prenom" name="prenom" required pattern="[A-Z a-z]{2,}" title="Veuillez entrer un prénom valide (lettres uniquement)">
+</div>
+<div class="ac">
+  <label for="email">Email :</label>
+  <input type="email" id="email" name="email" required>
+</div>
+<div class="ad">
+  <label for="telephone">Téléphone :</label>  
+  <input type="tel" id="telephone" name="telephone" required pattern="\d{8}" title="Veuillez entrer un numéro de téléphone valide (8 chiffres)">
+</div>
+<div class="a">
+  <label for="date_match">Date du match :</label>
+  <input type="date" id="date_match" name="date_match" min="2023-09-01" max="2023-12-30" required>
+</div>
+<div class="a">
+  <label for="lieu">Lieu du match :</label>
+  <select id="lieu" name="lieu">
+    <option value="Ariana">Ariana</option>
+    <option value="Beja">Beja</option>
+    <option value="Ben Arous">Ben Arous</option>
+    <option value="Bizerte">Bizerte</option>
+    <option value="Gabes">Gabes</option>
+    <option value="Gafsa">Gafsa</option>
+    <option value="Jendouba">Jendouba</option>
+    <option value="Kairouan">Kairouan</option>
+    <option value="Kasserine">Kasserine</option>
+    <option value="Kebili">Kebili</option>
+    <option value="Kef">Kef</option>
+    <option value="Mahdia">Mahdia</option>
+    <option value="Manouba">Manouba</option>
+    <option value="Medenine">Medenine</option>
+    <option value="Monastir">Monastir</option>
+    <option value="Nabeul">Nabeul</option>
+    <option value="Sfax">Sfax</option>
+    <option value="Sidi Bouzid">Sidi Bouzid</option>
+    <option value="Siliana">Siliana</option>
+    <option value="Sousse">Sousse</option>
+    <option value="Tataouine">Tataouine</option>
+    <option value="Tozeur">Tozeur</option>
+    <option value="Tunis">Tunis</option>
+    <option value="Zaghouan">Zaghouan</option>
+  </select>
+  </div>
+<div class="a">
+  <input type="submit" value="S'inscrire au match ">
+</div>
+</form>
+<hr style="border: 0; height: 1px; background: #333; margin-top: 50px;">
+
+<footer>
+  <p>
+    Vous pouvez nous contacter par email : 
+    <a href="mailto:contact@esprit.tn">contact@esprit.tn</a>
+  </p>
+  <p>Adresse : Ghazela, Tunis</p>
+</footer>
+</body>
+</html>
